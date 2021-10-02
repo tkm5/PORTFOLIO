@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="takumig, Portfolio">
+  <meta name="description" content="introduction of takumig">
+  <title>takumig official portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="img/g.jpg">
+</head>
+
+<body>
+
+  <header>
+      <!--      navigation bar-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">takumig</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#biography">Biography</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+<!--          <form class="d-flex">-->
+<!--            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
+<!--            <button class="btn btn-outline-light" type="submit">Search</button>-->
+<!--          </form>-->
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<main role="main">
+    <!--    carousel-->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade mt-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/c1.jpg" class="d-block w-100" alt="first_img">
+        </div>
+        <div class="carousel-item">
+          <img src="img/c2.jpg" class="d-block w-100" alt="second_img">
+        </div>
+        <div class="carousel-item">
+          <img src="img/c3.jpg" class="d-block w-100" alt="third_img">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--    Biography-->
+  <div class="container" id="biography">
+      <div class="row featurette align-items-center">
+        <div class="col-md-5 order-md-1">
+          <h1 class="biography">Biography</h1>
+          <img class="featurette-image img-fluid mx-auto" src="img/icon.jpg" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-7 order-md-2 ">
+          <h2 class="featurette-heading">takumig</h2>
+          <p class="lead">Data Scientist</p>
+          <p>1996年生まれ，東京理科大学理学部化学科（4年間修了）. Apple Japan，日本マイクロソフトやNTT 関連会社等 IT企業を渡り歩き，現在は大手広告代理店にてマーケティング支援のデータサイエンティストして活動中</p>
+          <p>Born in 1996．Graduated from the Tokyo University of Science.（Studies in 4 years）. He has worked for a number of IT companies including Apple JP, Microsoft JP, and NTT affiliated companies, and is currently working as a data scientist for a major advertising agency providing marketing support.</p>
+        </div>
+      </div>
+
+    <hr class="featurette-divider" id="skills">
+
+    <!--skill containers-->
+    <div class="container" >
+      <h1>Skills</h1>
+      <div class="row mt-1">
+        <div class="col-lg-4 col-sm-6">
+          <img class="mx-auto d-block rounded-circle" src="img/python.jpg" alt="python_image" width="140" height="140">
+          <h2 class="mt-4 text-center">Python</h2>
+          <p>データサイエンス系のライブラリ使用を得意とする．<br>メンテナンス性の高い設計・実装が可能．<br>また，Dockerを用いた，環境構築も可能</p>
+          <div class="text-center">
+            <p><a class="btn btn-outline-light" href="https://github.com/tkm5" role="button">Github &raquo;</a></p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <img class="mx-auto d-block " src="img/ds.jpg" alt="ds_image" width="140" height="140">
+          <h2 class="mt-4 text-center">Data Science</h2>
+          <p>numpy, pandas, matplotlib, seaborn, sklearn, keras などを使用し，データ分析 ~ モデル構築まで実装可能．<br>GCPなど用いた，環境構築やパイプライン構築も可能．</p>
+          <div class="text-center">
+            <p><a class="btn btn-outline-light" href="https://github.com/tkm5" role="button">Github &raquo;</a></p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <img class="mx-auto d-block " src="img/hc.jpg" alt="HTML/CSS_image" width="140" height="140">
+          <h2 class="mt-4 text-center">HTML / CSS</h2>
+          <p>HTML5, CSS3, BootStrap を使用した，デザイン性の高いホームページ作成可能．<br>レスポンシブ 対応際のホームページ実装も可能．</p>
+          <div class="text-center">
+            <p><a class="btn btn-outline-light" href="https://github.com/tkm5" role="button">Github &raquo;</a></p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <img class="mx-auto d-block rounded-circle" src="img/consul.jpg" alt="consulting_image" width="140" height="140">
+          <h2 class="mt-4 text-center">Consulting</h2>
+          <p>データマーケティング施策考案 ~ 運用まで対応可能．<br>ROI や KPI を念頭に置いた設計を得意とする．  </p>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <img class="mx-auto d-block rounded-circle" src="img/design.jpg" alt="documentation_image" width="140" height="140">
+          <h2 class="mt-4 text-center">Documentation</h2>
+          <p>Microsoft Office / i Works / Google Document を用いた，資料作成が可能．</p>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <img class="mx-auto d-block rounded-circle" src="img/movie.jpg" alt="Video_Editing_image" width="140" height="140">
+          <h2 class="mt-4 text-center">Video Editing</h2>
+          <p>Adobe Premiere Pro, FinalCutPro を用いた動画編集が可能．</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider" id="contacts">
+
+      <footer class="py-4 mt-5 bg-black text-end">
+        <div class="container">
+          <div class="row">
+            <div class="col text-start">
+              <p><a class="link-light fs-1" href="https://forms.gle/5hiNPrTCgrJdUWci8">Contacts</a></p>
+              <div class="mt-5">
+                <p>ご依頼・ご用件は、 <br>上記リンクよりお問い合わせください</p>
+                <ul>
+                  <li>講演・取材依頼</li>
+                  <li>クリエイティブ制作依頼</li>
+                  <li>その他， takumigへの仕事依頼</li>
+                </ul>
+                <p>For inquiries to takumig, <br>Please contact us from above link.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+              <img class="mb-2" src="img/sign.jpg" alt="sign" width="300">
+                <div>
+                  <p class="text-white-50 small">&copy; 2021 takumig</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-auto">
+            <div class="col mt-5">
+              <ul class="link_list">
+                <li class="sns_link">
+                  <a class="link-secondary" href="https://github.com/tkm5">Github</a>
+                </li>
+                <li class="sns_link">
+                  <a class="link-secondary" href="https://twitter.com/005takumig">Twitter</a>
+                </li>
+                <li class="sns_link">
+                  <a class="link-secondary" href="https://note.com/takumig">Note</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+  </div>
+
+
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
